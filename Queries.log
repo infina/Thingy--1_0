@@ -1,0 +1,52 @@
+<|> testing channel log
+| tests channel log
+<|> VERSION
+<|> !help
+<Thingyv2test> !nickchange | ||away
+<Thingyv2test> !nickchange ||away infina
+<Thingyv2test> !nickchange infina TheGoddamnBatman
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> !nickchange TheGoddamnBatman Enthalpy
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> !nickchange Enthalpy |
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> !nickchange PhoenixEnigma PointOfPresence
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> !nickchange PhoenixEnigma PointOfPresence
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> !nickchange PointOfPresence PhoenixWorking
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> !nickchange | TheGoddamnBatman
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> !nickchange PhoenixWorking PW
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> !nickchange PW PointOfPresence
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> !nickchange TheGoddamnBatman |
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<|> !cop Entropy
+<|> !kill Entropy
+<|> !restart
+<|> !kill Entropy
+<|> !cop Entropy
+<Thingyv2test> !nickchange PointOfPresence PhoenixEnigma
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<Thingyv2test> Thingyv2test, ERROR, NO GAME.
+<PhoenixEnigma> cop |
+<PhoenixEnigma> |
+<PhoenixEnigma> !cop
+<PhoenixEnigma> !cop |

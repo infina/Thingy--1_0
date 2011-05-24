@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "C:\Users\Corey\Desktop\MartianW-Thingy-c32e671\infina-Thingy--1_0-cb69005\thingy.py", line 43, in event
+    plugin.event(event)
+  File "C:\Users\Corey\Desktop\MartianW-Thingy-c32e671\infina-Thingy--1_0-cb69005\plugins\PgGameCore.py", line 15, in event
+    self.bot.game.action(event.sender, event.text[1:]) #Chop off command char
+  File "C:\Users\Corey\Desktop\MartianW-Thingy-c32e671\infina-Thingy--1_0-cb69005\game.py", line 25, in action
+    self.roles[sender].action(msg)
+  File "C:\Users\Corey\Desktop\MartianW-Thingy-c32e671\Thingy--1_0\setups\dethy.py", line 53, in action
+    self.game.mkDay()
+  File "C:\Users\Corey\Desktop\MartianW-Thingy-c32e671\Thingy--1_0\setups\dethy.py", line 198, in mkDay
+    if self.game.x == 6:
+AttributeError: 'Game_Dethy' object has no attribute 'game'

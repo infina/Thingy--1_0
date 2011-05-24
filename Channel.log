@@ -1,0 +1,331 @@
+| tests query log
+<|> testing query log
+<|> Hello Thingyv2test.
+<|> fine evening, isn't it?
+<|> I am testing you out now.
+<|> when I learn how to gui, I will turn you into my own little irc client.
+<Gojoey> Hi thingy!
+<Gojoey> !help
+<Gojoey> !start
+<Gojoey> !showusyourboobs
+<|> !signups
+<|> !umode +h Gojoey
+<|> !umode +h Gojoey
+<Gojoey> !test
+<|> !umode Gojoey +h
+<|> !umode Gojoey +h
+<|> !umode Gojoey +h
+<|> why did it change from line to args? that made no sense
+<Gojoey> !boobs
+<Gojoey> !help
+<Gojoey> !start
+<Gojoey> !signups
+<|> no working help right now.
+<|> !join
+<Gojoey> !join
+<|> !end
+<|> !signups
+<|> !end
+<|> !signups
+<|> !end
+<|> yay, I now have an errorlog file.
+<Gojoey> !join
+<Gojoey> !end
+<Gojoey> I am guessing he is supposed to say that if I do a !end when there is no game active
+<|> !signups
+<|> !start
+<|> !end
+<Gojoey> !end
+<Gojoey> !boobs
+<|> !end
+<Gojoey> eventually that is going to do something
+<Gojoey> !end
+<|> !signups deathy
+<|> !signups dethy
+<|> !signups dethy
+<|> !signups dethy
+<|> !end
+<|> !signups
+<thingytester> !join
+<|> !start
+<|> !signups
+<thingytester> !join
+<|> !start
+<|> !signups
+<thingytester> !join
+<|> !start
+<|> !signups
+<thingytester> !join
+<|> !start
+<|> !end
+<|> !signups
+<thingytester> !join
+<Gojoey> !join
+<|> !start
+<Gojoey> !vote Thingyv2test
+<Gojoey> !vote thingytester
+<|> !end
+<|> !signups
+<thingytester> !join
+<|> !start
+<|> !end
+<|> !signups
+<thingytester> !join
+<|> !start
+<|> !end
+<Gojoey> !mode #xkcdmafia boobs
+<Gojoey> thats not very nice!
+<Gojoey> whats +i I wonder
+<|> !mode -i
+<|> !mode -m
+<Gojoey> Was that me btw?
+<|> !signups
+<thingytester> !join
+<|> !start
+<|> !end
+<Gojoey> !boobs
+<Gojoey> !buttslol
+<Gojoey> !!!!!!!
+<Gojoey> !!end
+<Gojoey> !;
+<PhoenixEnigma> |, regarding setting the topic, any reason not to do that through ChanServ like prepending is done?
+<PhoenixEnigma> if only for consistancy, might be a good idea
+<|> ok, that might be better.
+<|> !signups
+<|> !join
+<|> !start
+<|> !end
+<PhoenixEnigma> OK, so not getting called, apparently
+<|> !signups
+<|> !join
+<|> !start
+<|> !end
+<|> check
+<|> !signups
+<|> !join
+<|> !start
+<|> !end
+<|> !signups
+<|> !join
+<|> !start
+<|> !end
+<|> !signups
+<|> !join
+<|> !start
+<|> !end
+<|> yes.
+<PhoenixEnigma> nice
+<|> !help
+<|> !help
+<|> test
+<PhoenixEnigma> ...any reason you don't use !restart?
+<|> !help
+<|> doesn't let me check the rawlog.
+<PhoenixEnigma> ah
+<|> !help
+<PhoenixEnigma> I think I've got an idea for handling case sensitivity, at least for voting, which I'll be working on tonight/tomorrow
+<PhoenixEnigma> anyways, pizza
+<|> !help
+<Gojoey> !boobs
+<|> !restart
+<|> !restart
+<|> !help
+<|> ...
+<|> PhoenixEnigma
+<Gojoey> Neat
+<Gojoey> !help
+<|> !restart
+<|> !help
+<|> !restart
+<Gojoey> !start
+<|> !help
+<|> !restart
+<|> !help
+<|> !help
+<|> !help
+<|> !restart
+<|> !help
+<|> !restart
+<|> !help
+<|> !restart
+<|> !help
+<|> !restart
+<|> !help
+<|> !restart
+<|> !help
+<Gojoey> !end
+<|> Gojoey, case insensitivity
+<Gojoey> true
+<|> !assping
+<|> yes.
+<Gojoey> !assping
+<Gojoey> :o
+<PhoenixEnigma> !signups
+<PhoenixEnigma> !join
+<PhoenixEnigma> !start
+<PhoenixEnigma> !insert gojoey
+<PhoenixEnigma> huh, ok
+<PhoenixEnigma> !end
+<Gojoey> I count that as a win
+<Gojoey> Just fyi
+<Gojoey> :P
+<PhoenixEnigma> hehe, it's not a loss, at any rate XD
+<Gojoey> Thingie should keep track of wins and loses >.>
+<Gojoey> thingy*
+<PhoenixEnigma> it would be nice, but the stats script has taught me that long term nick tracking in #xkcdmafia is a nightmare
+<Gojoey> Would it be possible to mess with the stats page to let it be in there?
+Gojoey has no idea how that page works
+<PhoenixEnigma> hmmm, maybe
+<PhoenixEnigma> would need to have a standard way to announce it
+<PhoenixEnigma> but maybe
+<TheGoddamnBatman> PhoenixWorking, watch this.
+<TheGoddamnBatman> !assping
+<PhoenixWorking> heh
+<TheGoddamnBatman> !google all
+<TheGoddamnBatman> !decide 1, 2, 3
+<TheGoddamnBatman> TheGoddamnBatman: 3
+<|> !8ball
+<Entropy> !signups
+<|> entropy, it was !restart.
+<Entropy> ah
+<Entropy> !end
+<Entropy> !mod !restart
+<|> !restart
+<Entropy> ah k
+<|> !umode | +v
+<DL> And with that...not speaking, I am to be leaving.
+<|> let's see what the rawlog says.
+<|> !signups dethy
+<|> !join
+<mib_hp1b1z> !join
+<mib_4s2ie5> !join
+<mib_j7jwn5> !join
+<mib_u1phxt> !join
+<|> !players
+<|> need one more...
+<Entropy> !join
+<|> !restart
+<|> !signups dethy
+<|> !join
+<mib_u1phxt> !join
+<mib_j7jwn5> !join
+<mib_4s2ie5> !join
+<mib_hp1b1z> !join
+<|> need one more...
+<Entropy> !join
+<mib_hp1b1z> !nl
+<mib_hp1b1z> !vote nolynch
+<Entropy> !investigate Entropy
+<mib_hp1b1z> !nolynch
+<Entropy> !cop Entropy
+<mib_4s2ie5> !nolynch
+<mib_j7jwn5> !nolynch
+<Entropy> !nolynch
+<Entropy> !cop Entropy
+<Thingyv2test> Entropy, unhandled error. Dumping debugging information.
+<mib_u1phxt> !cop entropy
+<Entropy> !day
+<mib_u1phxt> !cop Entropy
+<Thingyv2test> mib_u1phxt, unhandled error. Dumping debugging information.
+<mib_4s2ie5> !cop Entropy
+<Thingyv2test> mib_4s2ie5, unhandled error. Dumping debugging information.
+<mib_j7jwn5> !kill Entropy
+<Thingyv2test> mib_j7jwn5, unhandled error. Dumping debugging information.
+<mib_hp1b1z> !cop Entropy
+<Thingyv2test> mib_hp1b1z, unhandled error. Dumping debugging information.
+<|> !mod !day
+<|> !end
+<|> !mod !end
+<|> hehehe
+<|> !reload_thingy
+<|> !restart
+<|> !signups dethy
+<|> !join
+<mib_u1phxt> !join
+<mib_hp1b1z> !join
+<Entropy> !join
+<mib_4s2ie5> !join
+<mib_j7jwn5> !join
+<mib_j7jwn5> !nolynch
+<mib_u1phxt> !nolynch
+<mib_hp1b1z> !holynch
+<mib_4s2ie5> !nolynch
+<|> !nolynch
+<Entropy> !cop Entropy
+<Thingyv2test> Entropy, unhandled error. Dumping debugging information.
+<|> !signups dethy
+<|> !join
+<mib_u1phxt> !join
+<mib_j7jwn5> !join
+<mib_4s2ie5> !join
+<mib_hp1b1z> !join
+<|> !players
+<|> one more...
+<|> !massping
+<NB> :<
+<|> I could uberping.
+<Entropy> !join
+<|> !nolynch
+<mib_hp1b1z> !holynch
+<mib_4s2ie5> !nolynch
+<mib_j7jwn5> !nolynch
+<mib_u1phxt> !nolynch
+<mib_u1phxt> !cop Entropy
+<mib_j7jwn5> !cop Entropy
+<Thingyv2test> mib_j7jwn5, unhandled error. Dumping debugging information.
+<mib_4s2ie5> !cop Entropy
+<mib_hp1b1z> !cop Entropy
+<|> Entropy, submit your cop.
+<Entropy> !cop Entropy
+<|> !restart.
+<|> !signups dethy
+<|> !join
+<mib_u1phxt> !join
+<mib_j7jwn5> !join
+<mib_4s2ie5> !join
+<mib_hp1b1z> !join
+<|> Entropy?
+<Entropy> !join
+<|> !nolynch
+<mib_hp1b1z> !holynch
+<Entropy> !nolynch
+<mib_hp1b1z> !nolynch
+<mib_4s2ie5> !nolynch
+<mib_4s2ie5> !cop Entropy
+<mib_hp1b1z> !cop Entropy
+<Entropy> !kill Entropy
+<mib_j7jwn5> !cop Entropy
+<mib_u1phxt> !cop Entropy
+<|> entropy, the kill?
+<Entropy> already submitted it
+<|> ...
+<Entropy> I killed myself
+<|> !mod !day
+<|> !restart
+<|> !restart
+<|> !restart
+<|> !signups dethy
+<|> !join
+<mib_u1phxt> !join
+<mib_j7jwn5> !join
+<mib_4s2ie5> !join
+<mib_hp1b1z> !holynch
+<mib_hp1b1z> !join
+<|> PhoenixEnigma?
+<PhoenixEnigma> yes?
+<|> !join please.
+<PhoenixEnigma> join?
+<PhoenixEnigma> !join
+<|> !nolynch
+<mib_hp1b1z> !nolynch
+<PhoenixEnigma> !nolynch
+<mib_4s2ie5> !nolynch
+<mib_j7jwn5> !nolynch
+<mib_j7jwn5> !kill |
+<Thingyv2test> mib_j7jwn5, unhandled error. Dumping debugging information.
+<mib_4s2ie5> !cop |
+<Thingyv2test> mib_4s2ie5, unhandled error. Dumping debugging information.
+<mib_hp1b1z> !cop |
+<Thingyv2test> mib_hp1b1z, unhandled error. Dumping debugging information.
+<PhoenixEnigma> I get an error after cop results are returned
+<mib_u1phxt> ?
