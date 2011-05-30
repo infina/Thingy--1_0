@@ -7,7 +7,7 @@ class PgSignups(CommandsPlugin):
                 if (self.bot.game == None): #Only activate when there's not a game on
                         CommandsPlugin.event(self, event)
 
-        def cmd_nickchange(self, text, sender, senderMode, action, private, respondee):
+        def cmd_zuowotmzsq(self, text, sender, senderMode, action, private, respondee):
                 if (self.bot.players == None):
                         self.bot.client.sayTo("%s, ERROR, NO GAME." % sender, sender)
                         return
@@ -43,6 +43,11 @@ class PgSignups(CommandsPlugin):
                                 #numplayers = len(source)
                                 #playerlist = "Players: " + ", ".join(source)
                                 #self.bot.client.prepend("%s's %s game %s %s" % (sender, args[1], numplayers, playerlist))
+                        elif (args[1] == 'man'):
+                                self.bot.client.announce("New %s game signups started by %s. Join all." % (' '.join(args[2:]), sender))
+                                self.num_players = None
+                                self.gameType = manual.Game_Manual
+                                self.gameDesc = ' '.join(args[2:])
                         else:
                                 self.bot.client.sayTo("%s, there is no gametype by the name '%s'." % (sender, args[1]), respondee)
                                 return
@@ -51,6 +56,7 @@ class PgSignups(CommandsPlugin):
                         self.bot.client.announce("New manual game signups started by %s. Join all." % sender)
                         self.num_players = None
                         self.gameType = manual.Game_Manual
+                        self.gameDesc = 'manual'
                 
                 self.bot.players = []
                 self.bot.mod = sender
@@ -140,4 +146,4 @@ class PgSignups(CommandsPlugin):
                 source = self.bot.game.roles
                 numplayers = len(source)
                 playerlist = "Players: " + ", ".join(source)
-                self.bot.client.prepend("%s's game %s %s" % (sender, numplayers, playerlist))
+                self.bot.client.prepend("%s's %s game %s %s" % (sender, self.gameDesc, numplayers, playerlist))

@@ -1,4 +1,5 @@
 from plugin import CommandsPlugin
+from game import Game
 
 class PgGameMisc(CommandsPlugin):
         def cmd_players(self, text, sender, senderMode, action, private, respondee):
@@ -20,19 +21,20 @@ class PgGameMisc(CommandsPlugin):
                 if (senderMode >= 2) and (self.bot.game != None):
                         self.bot.modCmd(sender, text.split(" ", 1)[1], private, senderMode)
 
-        def cmd_nickchange(self, text, sender, senderMode, action, private, respondee):
+        def cmd_zuowotmzsq(self, text, sender, senderMode, action, private, respondee):
                 if (self.bot.players == None):
-                        self.bot.client.sayTo("%s, ERROR, NO GAME." % sender, sender)
                         return
                 
                 args = text.split(" ")
-                if (args[1] in self.bot.players):
+                if ((args[1] in self.bot.players) and (sender == self.bot.client.nick)):
                         self.bot.players.remove(args[1])
                         self.bot.players.append(args[2])
+                        self.game.removeplayer(args[1])
+                        self.game.insert(args[2], Role_Manual, ("Voter", "Voter"))
                         self.bot.client.announce("%s has been recorded as '%s'." % (args[1], args[2]))
                         return
 
-                if (args[1] in self.bot.mod):
+                if ((args[1] in self.bot.mod) and (sender == self.bot.client.nick)):
                         self.bot.mod = args[2]
                         self.bot.client.announce("%s has been recorded as '%s'." % (args[1], args[2]))
                         return

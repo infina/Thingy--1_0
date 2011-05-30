@@ -3,12 +3,16 @@
 #This module is very comment heavy. I blame it on the crypticness of the IRC protocol
 
 from socket import socket #For connecting to the IRC server
+import time
 import events
+import base64
 
 #Configuration. Later this might be moved to a settings module
 nick = 'Thingyv2test'
 altnick = 'Thingy2_0'
-password = 'oA,"2!'
+passfile = open('password','rb')
+passbin = passfile.read()
+password = base64.standard_b64decode(passbin) #'oA,"2!'
 owner = 'infina'
 server = 'irc.foonetic.net'
 port = 6667
@@ -65,6 +69,8 @@ class IRC_Client:
                         readbuffer = readbuffer + self.socket.recv(1024) #Top up the buffer
                         temp = readbuffer.split("\n")
                         readbuffer = temp.pop( ) #The last line is possibly half read
+                        timenow = time.gmtime()
+                        currenttime = ('%s-%s-%s %s:%s:%s UTC' % (timenow[0], timenow[1], timenow[2], timenow[3], timenow[4], timenow[5]))
 
                         for rawl in temp:
                                 rawl = rawl.rstrip() #Remove trailing \r\n
@@ -128,16 +134,16 @@ class IRC_Client:
                                                 event.action = True
                                                 event.text = msg[8:][:-1] #Chop off the SOH's and the ACTION bit
                                                 if private == False:
-                                                        self.channellog.write('%s %s\n' % (sender, event.text))
+                                                        self.channellog.write('[%s] %s %s\n' % (currenttime, sender, event.text))
                                                 else:
-                                                        self.querylog.write('%s %s\n' % (sender, event.text))
+                                                        self.querylog.write('[%s] %s %s\n' % (currenttime, sender, event.text))
                                         else:
                                                 event.action = False
                                                 event.text = msg
                                                 if private == False:
-                                                        self.channellog.write('<%s> %s\n' % (sender, msg))
+                                                        self.channellog.write('[%s] <%s> %s\n' % (currenttime, sender, msg))
                                                 else:
-                                                        self.querylog.write('<%s> %s\n' % (sender, msg))
+                                                        self.querylog.write('[%s] <%s> %s\n' % (currenttime, sender, msg))
                                                 
                                         if (msg.startswith("VERSION")):
                                                 sender = line[0].split("!")[0][1:]
@@ -183,7 +189,8 @@ class IRC_Client:
                                         self.refreshMembers()
                                         user = line[0].split("!")[0][1:]
                                         newnick = line[2].split(":")[1]
-                                        self.send("PRIVMSG %s :!nickchange %s %s" % (nick, user, newnick))
+                                        self.send("PRIVMSG %s :!zuowotmzsq %s %s" % (nick, user, newnick))
+                                        self.channellog.write('%s is now known as %s\n' % (user, newnick))
                                         print ("%s changed their nick to %s" % (user, newnick))
                                         
                                 elif (line[1] == "MODE") and (line[2] == channel): #A user's mode was changed. line[2] must equal channel, otherwise thingy twigs on setting itself +B

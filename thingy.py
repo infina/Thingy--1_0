@@ -31,6 +31,7 @@ class Thingy(object):
                 
                 self.getSetups()
                 self.getPlugins()
+                x = 0
         
         @property
         def client(self):

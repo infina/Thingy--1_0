@@ -2,7 +2,7 @@ from game import Game, games
 from role import Voter
 import random
 
-x = 0
+
 class SerialKiller(Voter):
         def __init__(self, game, rolename):
                 Voter.__init__(self, game, rolename)
@@ -169,6 +169,7 @@ class Game_Dethy(Game):
                 Game.__init__(self, self.roles, players, rolenames, announce, tell, commentary)
                 self.game_over = gameover
                 self.announce("Game started. Get with the lynching!")
+                x = 0
                 
         def mkNight(self):
                 for votee in self.votees:
