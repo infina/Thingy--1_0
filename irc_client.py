@@ -2,13 +2,14 @@
 
 #This module is very comment heavy. I blame it on the crypticness of the IRC protocol
 
-from socket import socket #For connecting to the IRC server
+import socket
+#from socket import * #For connecting to the IRC server
 import time
 import events
 import base64
 
 #Configuration. Later this might be moved to a settings module
-nick = 'Thingyv2test'
+nick = 'thingyv2test'
 altnick = 'Thingy2_0'
 passfile = open('password','rb')
 passbin = passfile.read()
@@ -29,7 +30,9 @@ class IRC_Client:
         """IRC stuff. Initialization takes a Thingy object, which it calls with relevant events"""
         def __init__(self, interface):
                 self.interface = interface
-                self.socket = socket() #Socket class
+                self.htonl = socket.ntohl
+                self.htons = socket.htons
+                self.socket = socket.socket() #Socket class
                 self.socket.connect((server, port)) #Connect
                 self.running = True
                 self.namesResult = [] #Used for buffering information returned from names request
@@ -103,7 +106,7 @@ class IRC_Client:
         
                                 #We've received a notice from nickserv
                                 elif (line[0].startswith(":NickServ") and line[1] == "NOTICE" and line[2] == nick):
-                                        if (' '.join(line[3:]) == ":You are now identified for thingyv2test."): #We're logged in
+                                        if (' '.join(line[3:]) == ":You are now identified for %s." % nick): #We're logged in
                                                 print ("Identified with NickServ, now joining main channel.")
                                                 self.join(channel)
                                         
@@ -150,7 +153,25 @@ class IRC_Client:
                                                 self.send("NOTICE %s :VERSION %s " % (sender, VERSION))
                                                 print ("%s CTCP Version'd" % (sender))
                                                 return
-                                        
+
+                                        if (msg.startswith("DCC")):
+                                                sender = line[0].split("!")[0][1:]
+                                                filename = line[5]
+                                                filesize = line[8]
+                                                newdcc = open(filename, 'wb')
+                                                dccserver = str(self.htonl(int(line[6])))
+                                                dccport = self.htons(int(line[7]))
+                                                print (line[6])
+                                                print (dccserver)
+                                                print (dccport)
+                                                dccporti = int(dccport)
+                                                self.socket.connect((dccserver, dccport))
+                                                self.socket.send('DCC ACCEPT\r\n')
+                                                newdcc.write(line)
+                                                print ("%s DCC'd file %s, of %s bytes" % (sender, filename, filesize))
+                                                
+
+
                                         if (msg.startswith("!mode") and (len(line) >= 4)):
                                                 sender = line[0].split("!")[0][1:]
                                                 self.send("MODE %s %s" % (channel, line[4]))

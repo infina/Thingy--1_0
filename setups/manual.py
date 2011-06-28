@@ -67,5 +67,3 @@ class Game_Manual(Game):
 
                 elif (cmd[0] == "!modchan"):
                     self.client.sayTo("/MODE #xkcdmafia +m")
-
-             
